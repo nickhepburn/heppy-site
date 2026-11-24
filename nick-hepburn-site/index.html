@@ -433,7 +433,7 @@
       "CONTACT",
       "=======",
       "",
-      "Find me on LinkedIn, or send a note below."
+      "Find me on LinkedIn, Substack, or Github. You can also send me a note below."
     ].join("\n") },
 
     // ----- Detail sheets: opened from the titles on the home pages -----
@@ -470,6 +470,8 @@
   var FORM_ENDPOINT = 'https://api.web3forms.com/submit';
   var WEB3FORMS_KEY = '79de6cc5-961a-459c-8f63-cc6e0b7c78f0';   // public by design; it only lets people send messages to you
   var LINKEDIN_URL = 'https://www.linkedin.com/in/nick-hepburn/';
+  var SUBSTACK_URL = 'https://nickhepburn.substack.com/';
+  var GITHUB_URL = 'https://github.com/nickhepburn';
 
   // ----- Photos for the Ireland stack (files live in the photos/ folder) -----
   var IRELAND_PHOTOS = [
@@ -659,6 +661,8 @@
       extra.className = 'page-extra contact-extra';
       extra.innerHTML =
         '<p class="li-line">LinkedIn: <a href="' + LINKEDIN_URL + '" target="_blank" rel="noopener noreferrer">linkedin.com/in/nick-hepburn</a></p>' +
+        '<p class="li-line">Substack: <a href="' + SUBSTACK_URL + '" target="_blank" rel="noopener noreferrer">nickhepburn.substack.com/</a></p>' +
+        '<p class="li-line">Github: <a href="' + GITHUB_URL + '" target="_blank" rel="noopener noreferrer">github.com/nickhepburn</a></p>' +
         '<form id="contactForm" novalidate>' +
           '<p class="form-title">SEND ME A MESSAGE</p>' +
           '<label>Your name <span class="opt">(optional)</span><input name="name" type="text" autocomplete="name" maxlength="80"></label>' +
